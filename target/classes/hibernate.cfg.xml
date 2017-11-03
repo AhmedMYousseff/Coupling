@@ -5,11 +5,11 @@
 <hibernate-configuration>
 	<session-factory>
 		<property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
-		<property name="hibernate.connection.url">jdbc:mysql://localhost:3306/SpringTutorial?useSSL=true</property>
+		<property name="hibernate.connection.url">jdbc:mysql://localhost:3306/SpringTutorial</property>
 		<property name="hibernate.connection.username">root</property>
 		<property name="hibernate.connection.password">123</property>
 		<property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
 		<property name="hibernate.hbm2ddl.auto">create</property>
-		<mapping class="io.study.domain.Prodcut"/>
+		<mapping class="io.study.Prodcut"/>
 	</session-factory>
 </hibernate-configuration>
