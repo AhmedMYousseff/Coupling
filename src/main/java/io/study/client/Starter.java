@@ -11,9 +11,8 @@ public class Starter {
 		
 		ClassPathXmlApplicationContext container = new ClassPathXmlApplicationContext("application.xml");
 		UserService service = container.getBean("userService",UserService.class);
-		User user = new User("Salim", "salim@email.com");
-			service.registerANewUserToDB(user);
-		
+		User user = new User(1,"Islam","Email");
+		service.registerANewUserToDB(user);
 		container.close();
 		
 	}

@@ -4,11 +4,12 @@ import io.study.domain.User;
 
 public class UserDataMockImplUsingHiberna implements UserData{
 	
-	
+
 	public void addUser(User user) {
 
 		// act like it is a real data from database
-		System.out.println("Add User To Database using Jpa");
+
+		
 
 	}
 

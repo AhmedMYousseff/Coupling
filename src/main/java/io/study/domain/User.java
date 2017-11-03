@@ -1,26 +1,20 @@
 package io.study.domain;
 
 import lombok.Data;
+import lombok.NonNull;
+import lombok.RequiredArgsConstructor;
 
 @Data
-public class User {
-	private Integer id;
-	private String user;
-	private String email;
-	
-	public User(Integer id, String user, String email) {
-	
-		this.id = id;
-		this.user = user;
-		this.email = email;
-	}
-	public User( String user, String email) {
+@RequiredArgsConstructor
 
-		this.user = user;
-		this.email = email;
-	}
+public class User {
+	@NonNull
+	private Integer id;
+	@NonNull
+	private String user;
 	
-	
+	@NonNull
+	private String email;
 	
 	
 

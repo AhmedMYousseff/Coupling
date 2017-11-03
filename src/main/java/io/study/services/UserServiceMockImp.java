@@ -5,16 +5,15 @@ import io.study.domain.User;
 
 public class UserServiceMockImp implements UserService {
 
-	UserData dao;
+	private UserData  dao;
 
-	public void setDao(UserData dao) {
+	public void setDao(UserData  dao) {
 		this.dao = dao;
 	}
 
+	
 	public void registerANewUserToDB(User user) {
-
 		dao.addUser(user);
-
 	}
 
 	public void deleteUserFromDB() {

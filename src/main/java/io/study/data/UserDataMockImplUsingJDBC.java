@@ -12,7 +12,9 @@ public class UserDataMockImplUsingJDBC implements UserData {
 	private static final String INSERT_USER = "insert into User (name,email) values(?,?)";
 	public UserDataMockImplUsingJDBC() {}
 	public UserDataMockImplUsingJDBC(JdbcTemplate jdbcTemplate) {
+		
 		this.jdbcTemplate = jdbcTemplate;
+		
 		try {		
 		jdbcTemplate.update(CREATE_USER_TABLE );
 		}
